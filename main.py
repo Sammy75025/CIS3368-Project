@@ -42,5 +42,6 @@ def execute_read_query(connection, query):
 conn = create_con('cis368spring.cb6eggewohwd.us-east-1.rds.amazonaws.com', 'admin','Yeager1001','cis3368springdb')
 cursor = conn.cursor (dictionary = True)
 
-
+app = flask.Flask(__name__) 
+app.config["DEBUG"] = True  
 
